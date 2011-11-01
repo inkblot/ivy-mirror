@@ -1,0 +1,48 @@
+<project name="ivy-mirror" default="dist" xmlns:ivy="antlib:org.apache.ivy.ant">
+
+    <property name="build" location="${basedir}/build"/>
+    <property name="lib" location="${basedir}/lib"/>
+
+    <property name="ivy.lib" location="${basedir}/lib"/>
+    <property name="ivy.jar.file" location="${ivy.lib}/ivy-2.0.0.jar"/>
+    <condition property="download-ivy.once">
+        <available file="${ivy.jar.file}"/>
+    </condition>
+
+    <target name="clean-artifacts">
+        <delete dir="${build}"/>
+    </target>
+
+    <target name="clean" depends="clean-artifacts" description="Remove all generated files and directory">
+        <delete dir="${lib}"/>
+    </target>
+
+    <target name="download-ivy" unless="download-ivy.once">
+        <mkdir dir="${ivy.lib}"/>
+        <get src="http://dorothy.movealong.org/~inkblot/ivy/ivy-2.0.0.jar"
+             dest="${ivy.lib}/ivy-2.0.0.jar" usetimestamp="true" verbose="true"/>
+        <get src="http://dorothy.movealong.org/~inkblot/ivy/jsch-0.1.38.jar"
+             dest="${ivy.lib}/jsch-0.1.38.jar" usetimestamp="true" verbose="true"/>
+    </target>
+
+    <target name="init-ivy" depends="download-ivy" unless="init-ivy.once">
+        <path id="ivy.lib.path">
+            <fileset dir="${ivy.lib}" includes="*.jar"/>
+        </path>
+        <taskdef resource="org/apache/ivy/ant/antlib.xml"
+                 uri="antlib:org.apache.ivy.ant" classpathref="ivy.lib.path"/>
+        <ivy:settings id="ivy.basic" file="${basedir}/ivy-settings.xml"/>
+        <property name="init-ivy.once" value="yes"/>
+    </target>
+
+    <target name="init" depends="init-ivy">
+        <mkdir dir="${build}"/>
+    </target>
+
+    <target name="install-jars" depends="init">
+        <ivy:install settingsRef="ivy.basic" organisation="com.google.inject" module="guice" revision="2.0" from="main" to="dist" transitive="true" overwrite="true"/>
+    </target>
+
+    <target name="dist" depends="install-jars"/>
+
+</project>
