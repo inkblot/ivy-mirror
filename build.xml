@@ -44,6 +44,7 @@
         <ivy:install organisation="com.google.inject" module="guice" revision="2.0" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
         <ivy:install organisation="com.google.inject" module="guice" revision="3.0" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
         <ivy:install organisation="junit" module="junit" revision="4.6" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <ivy:install organisation="junit" module="junit" revision="4.8.2" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
     </target>
 
     <target name="dist" depends="install-jars"/>
