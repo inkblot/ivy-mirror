@@ -1,0 +1,1 @@
+grep -h '<dependency' $(find ../ -name ivy.xml) | sed -e 's/.*<dependency org="\([^"]*\)" name="\([^"]*\)" rev="\([^"]*\)".*/        <ivy:install organization="\1" module="\2" revision="\3" from="outside" to="${target.resolver}" transitive="true" overwrite="true"\/>/'
