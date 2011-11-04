@@ -10,27 +10,23 @@
 
         <filesystem name="local" m2compatible="true">
             <ivy pattern="${user.home}/.ivy/repo/[organization]/[module]/[revision]/ivy-[revision].[ext]"/>
-            <artifact
-                    pattern="${user.home}/.ivy/repo/[organization]/[module]/[revision]/[artifact]-[revision].[ext]"/>
+            <artifact pattern="${user.home}/.ivy/repo/[organization]/[module]/[revision]/[artifact]-[type]-[revision].[ext]"/>
         </filesystem>
 
         <filesystem name="dist" m2compatible="true">
             <ivy pattern="${build}/[organization]/[module]/[revision]/ivy-[revision].[ext]"/>
-            <artifact
-                    pattern="${build}/[organization]/[module]/[revision]/[artifact]-[revision].[ext]"/>
+            <artifact pattern="${build}/[organization]/[module]/[revision]/[artifact]-[type]-[revision].[ext]"/>
         </filesystem>
 
         <filesystem name="local" m2compatible="true">
             <ivy pattern="${user.home}/.ivy/repo/[organization]/[module]/[revision]/ivy-[revision].[ext]"/>
-            <artifact
-                    pattern="${user.home}/.ivy/repo/[organization]/[module]/[revision]/[artifact]-[revision].[ext]"/>
+            <artifact pattern="${user.home}/.ivy/repo/[organization]/[module]/[revision]/[artifact]-[type]-[revision].[ext]"/>
         </filesystem>
 
         <ssh name="dorothy-mirror" user="jenkins" host="dorothy.movealong.org" port="24"
              keyFile="${user.home}/.ssh/id_ivy" m2compatible="true" publishPermissions="0644">
             <ivy pattern="/var/www/ivy.movealong.org/mirror/[organization]/[module]/[revision]/ivy-[revision].[ext]"/>
-            <artifact
-                    pattern="/var/www/ivy.movealong.org/mirror/[organization]/[module]/[revision]/[artifact]-[revision].[ext]"/>
+            <artifact pattern="/var/www/ivy.movealong.org/mirror/[organization]/[module]/[revision]/[artifact]-[type]-[revision].[ext]"/>
         </ssh>
     </resolvers>
 </ivysettings>
