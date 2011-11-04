@@ -15,7 +15,7 @@
     </target>
 
     <target name="clean" depends="clean-artifacts" description="Remove all generated files and directory">
-        <delete dir="${lib}"/>
+        <!--<delete dir="${lib}"/>-->
     </target>
 
     <target name="download-ivy" unless="download-ivy.once">
@@ -41,12 +41,75 @@
     </target>
 
     <target name="install-jars" depends="init">
+        <ivy:install organisation="org.apache.ivy" module="ivy" revision="2.0.0" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <ivy:install organisation="com.jcraft" module="jsch" revision="0.1.38" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <ivy:install organisation="com.jcraft" module="jsch" revision="0.1.42" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <ivy:install organisation="ant" module="ant" revision="1.7.0" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <ivy:install organisation="ant-contrib" module="ant-contrib" revision="1.0b3" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <ivy:install organisation="com.google.code.gson" module="gson" revision="1.4" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
         <ivy:install organisation="com.google.inject" module="guice" revision="2.0" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
         <ivy:install organisation="com.google.inject" module="guice" revision="3.0" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <ivy:install organisation="com.google.inject.extensions" module="guice-multibindings" revision="2.0" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <ivy:install organisation="com.jcraft" module="jsch" revision="0.1.42" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <ivy:install organisation="com.sun.jersey" module="jersey-bundle" revision="1.4" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <ivy:install organisation="commons-beanutils" module="commons-beanutils" revision="1.8.3" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <ivy:install organisation="commons-io" module="commons-io" revision="1.4" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <ivy:install organisation="commons-io" module="commons-io" revision="2.0" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <ivy:install organisation="commons-io" module="commons-io" revision="2.0.1" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <ivy:install organisation="commons-lang" module="commons-lang" revision="2.3" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <ivy:install organisation="commons-lang" module="commons-lang" revision="2.4" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <ivy:install organisation="commons-lang" module="commons-lang" revision="2.5" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <ivy:install organisation="commons-lang" module="commons-lang" revision="2.6" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <ivy:install organisation="commons-logging" module="commons-logging-api" revision="1.1" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <ivy:install organisation="displaytag" module="displaytag" revision="1.2" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <ivy:install organisation="javassist" module="javassist" revision="3.8.0.GA" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <ivy:install organisation="javax.inject" module="javax.inject" revision="1" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <ivy:install organisation="javax.mail" module="mail" revision="1.4" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <ivy:install organisation="javax.media" module="jmf" revision="2.1.1e" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <ivy:install organisation="javax.servlet" module="jsp-api" revision="2.0" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <ivy:install organisation="javax.servlet" module="jstl" revision="1.2" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <ivy:install organisation="javax.servlet" module="servlet-api" revision="2.5" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <ivy:install organisation="javax.ws.rs" module="jsr311-api" revision="1.1.1" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <ivy:install organisation="junit" module="junit" revision="4.4" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
         <ivy:install organisation="junit" module="junit" revision="4.6" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <ivy:install organisation="junit" module="junit" revision="4.8.1" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
         <ivy:install organisation="junit" module="junit" revision="4.8.2" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <!--<ivy:install organisation="log4j" module="log4j" revision="1.2.15" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>-->
+        <ivy:install organisation="log4j" module="log4j" revision="1.2.16" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <ivy:install organisation="mysql" module="mysql-connector-java" revision="5.1.13" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <ivy:install organisation="net.sourceforge.cobertura" module="cobertura" revision="1.9.4" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <!--<ivy:install organisation="net.sourceforge.stripes" module="stripes" revision="1.5.2" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>-->
+        <ivy:install organisation="org.apache.velocity" module="velocity" revision="1.6.2" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <ivy:install organisation="org.aspectj" module="aspectjrt" revision="1.6.11" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <ivy:install organisation="org.aspectj" module="aspectjtools" revision="1.6.11" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <!--<ivy:install organisation="org.asteriskjava" module="asterisk-java" revision="1.0.0.M3" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>-->
+        <ivy:install organisation="org.easymock" module="easymock" revision="2.3" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <ivy:install organisation="org.hamcrest" module="hamcrest-library" revision="1.1" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <ivy:install organisation="org.hibernate" module="hibernate-annotations" revision="3.4.0.GA" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <ivy:install organisation="org.hibernate" module="hibernate-tools" revision="3.2.3.GA" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <ivy:install organisation="org.hsqldb" module="hsqldb" revision="2.0.0" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <ivy:install organisation="org.hsqldb" module="hsqldb" revision="2.2.4" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <ivy:install organisation="org.htmlparser" module="htmlparser" revision="1.6" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <!--<ivy:install organisation="org.jclouds" module="jclouds-allblobstore" revision="1.0-beta-7" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>-->
+        <!--<ivy:install organisation="org.jclouds" module="jclouds-allcompute" revision="1.0-beta-7" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>-->
+        <!--<ivy:install organisation="org.jclouds" module="jclouds-jsch" revision="1.0-beta-7" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>-->
+        <ivy:install organisation="org.jmock" module="jmock" revision="2.5.1" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <ivy:install organisation="org.jmock" module="jmock-junit4" revision="2.5.1" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <ivy:install organisation="org.json" module="json" revision="20090211" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <ivy:install organisation="org.mockito" module="mockito-all" revision="1.7" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <ivy:install organisation="org.ostermiller" module="utils" revision="1.07.00" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <!--<ivy:install organisation="org.quartz-scheduler" module="quartz" revision="1.8.4" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>-->
+        <ivy:install organisation="org.slf4j" module="slf4j-api" revision="1.5.8" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <ivy:install organisation="org.slf4j" module="slf4j-api" revision="1.6.0" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <ivy:install organisation="org.slf4j" module="slf4j-api" revision="1.6.1" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <ivy:install organisation="org.slf4j" module="slf4j-api" revision="1.6.2" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <ivy:install organisation="org.slf4j" module="slf4j-jdk14" revision="1.4.2" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <ivy:install organisation="org.slf4j" module="slf4j-log4j12" revision="1.6.0" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <ivy:install organisation="org.slf4j" module="slf4j-log4j12" revision="1.6.1" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <ivy:install organisation="org.slf4j" module="slf4j-log4j12" revision="1.6.2" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <ivy:install organisation="org.slf4j" module="slf4j-simple" revision="1.5.8" from="outside" to="${target.resolver}" transitive="true" overwrite="true"/>
     </target>
 
-    <target name="dist" depends="install-jars"/>
+    <target name="dist" depends="clean, install-jars"/>
 
 </project>
