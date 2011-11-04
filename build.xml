@@ -43,8 +43,7 @@
     </target>
 
     <target name="install-jars" depends="init">
-        <ivy:install organisation="org.apache.ivy" module="ivy" revision="2.0.0" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
-        <ivy:install organisation="org.apache.ivy" module="ivy" revision="2.2.0" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <ivy:install organisation="org.apache.ivy" module="ivy" revision="2.2.0" from="${source.resolver}" to="${target.resolver}" transitive="false" overwrite="true"/>
         <ivy:install organisation="com.jcraft" module="jsch" revision="0.1.38" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
         <ivy:install organisation="com.jcraft" module="jsch" revision="0.1.42" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
         <ivy:install organisation="ant" module="ant" revision="1.7.0" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
@@ -54,7 +53,7 @@
         <ivy:install organisation="com.google.inject" module="guice" revision="3.0" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
         <ivy:install organisation="com.google.inject.extensions" module="guice-multibindings" revision="2.0" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
         <ivy:install organisation="com.jcraft" module="jsch" revision="0.1.42" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
-        <ivy:install organisation="com.sun.jersey" module="jersey-bundle" revision="1.4" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <!--<ivy:install organisation="com.sun.jersey" module="jersey-bundle" revision="1.4" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>-->
         <ivy:install organisation="commons-beanutils" module="commons-beanutils" revision="1.8.3" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
         <ivy:install organisation="commons-io" module="commons-io" revision="1.4" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
         <ivy:install organisation="commons-io" module="commons-io" revision="2.0" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
@@ -64,7 +63,7 @@
         <ivy:install organisation="commons-lang" module="commons-lang" revision="2.5" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
         <ivy:install organisation="commons-lang" module="commons-lang" revision="2.6" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
         <ivy:install organisation="commons-logging" module="commons-logging-api" revision="1.1" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
-        <ivy:install organisation="displaytag" module="displaytag" revision="1.2" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <!--<ivy:install organisation="displaytag" module="displaytag" revision="1.2" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>-->
         <ivy:install organisation="javassist" module="javassist" revision="3.8.0.GA" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
         <ivy:install organisation="javax.inject" module="javax.inject" revision="1" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
         <ivy:install organisation="javax.mail" module="mail" revision="1.4" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
@@ -78,7 +77,7 @@
         <ivy:install organisation="junit" module="junit" revision="4.8.1" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
         <ivy:install organisation="junit" module="junit" revision="4.8.2" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
         <!--<ivy:install organisation="log4j" module="log4j" revision="1.2.15" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>-->
-        <ivy:install organisation="log4j" module="log4j" revision="1.2.16" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <!--<ivy:install organisation="log4j" module="log4j" revision="1.2.16" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>-->
         <ivy:install organisation="mysql" module="mysql-connector-java" revision="5.1.13" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
         <ivy:install organisation="net.sourceforge.cobertura" module="cobertura" revision="1.9.4" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
         <!--<ivy:install organisation="net.sourceforge.stripes" module="stripes" revision="1.5.2" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>-->
