@@ -101,7 +101,8 @@
         <ivy:install organisation="org.json" module="json" revision="20090211" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
         <ivy:install organisation="org.mockito" module="mockito-all" revision="1.7" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
         <ivy:install organisation="org.ostermiller" module="utils" revision="1.07.00" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
-        <!--<ivy:install organisation="org.quartz-scheduler" module="quartz" revision="1.8.4" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>-->
+        <ivy:install organisation="org.quartz-scheduler" module="quartz" revision="1.8.4" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
+        <ivy:install organisation="org.quartz-scheduler" module="quartz" revision="2.1.0" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
         <ivy:install organisation="org.slf4j" module="slf4j-api" revision="1.5.8" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
         <ivy:install organisation="org.slf4j" module="slf4j-api" revision="1.6.0" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
         <ivy:install organisation="org.slf4j" module="slf4j-api" revision="1.6.1" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
@@ -111,6 +112,10 @@
         <ivy:install organisation="org.slf4j" module="slf4j-log4j12" revision="1.6.1" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
         <ivy:install organisation="org.slf4j" module="slf4j-log4j12" revision="1.6.2" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
         <ivy:install organisation="org.slf4j" module="slf4j-simple" revision="1.5.8" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
+    </target>
+
+    <target name="install-extra" depends="clean, init-ivy">
+        <ivy:install organisation="ant" module="ant-junit" revision="1.6.5" from="outside" to="local" transitive="true" overwrite="true"/>
     </target>
 
     <target name="dist" depends="clean, install-jars"/>
