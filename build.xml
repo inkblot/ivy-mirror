@@ -61,7 +61,7 @@
         <ivy:install organisation="commons-lang" module="commons-lang" revision="2.5" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
         <ivy:install organisation="commons-lang" module="commons-lang" revision="2.6" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
         <ivy:install organisation="commons-logging" module="commons-logging-api" revision="1.1" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
-        <!--<ivy:install organisation="displaytag" module="displaytag" revision="1.2" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>-->
+        <ivy:install organisation="displaytag" module="displaytag" revision="1.2" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
         <ivy:install organisation="javassist" module="javassist" revision="3.8.0.GA" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
         <ivy:install organisation="javax.inject" module="javax.inject" revision="1" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
         <ivy:install organisation="javax.mail" module="mail" revision="1.4" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
