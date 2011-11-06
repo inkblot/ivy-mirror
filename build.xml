@@ -83,7 +83,7 @@
         <ivy:install organisation="org.apache.velocity" module="velocity" revision="1.6.2" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
         <ivy:install organisation="org.aspectj" module="aspectjrt" revision="1.6.11" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
         <ivy:install organisation="org.aspectj" module="aspectjtools" revision="1.6.11" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
-        <!--<ivy:install organisation="org.asteriskjava" module="asterisk-java" revision="1.0.0.M3" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>-->
+        <ivy:install organisation="org.asteriskjava" module="asterisk-java" revision="1.0.0.M3" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
         <ivy:install organisation="org.easymock" module="easymock" revision="2.3" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
         <ivy:install organisation="org.hamcrest" module="hamcrest-library" revision="1.1" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
         <ivy:install organisation="org.hibernate" module="hibernate-annotations" revision="3.4.0.GA" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>

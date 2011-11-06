@@ -13,6 +13,7 @@
             <ibiblio name="jboss" m2compatible="true" root="https://repository.jboss.org/nexus/content/groups/public/"/>
 	    <ibiblio name="jdubois" m2compatible="true" root="http://julien.dubois.free.fr/maven2/"/>
 	    <ibiblio name="bluesunrise" m2compatible="true" root="http://bluesunrise.com/maven2/"/>
+	    <ibiblio name="openspaces" m2compatible="true" root="http://fisheye.openspaces.org/browse/MOT/trunk/repository/"/>
             <ibiblio name="jclouds" m2compatible="true" root="http://jclouds.googlecode.com/svn/repo/"/>
             <ibiblio name="oauth" m2compatible="true" root="http://oauth.googlecode.com/svn/code/maven/"/>
         </chain>
