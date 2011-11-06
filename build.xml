@@ -1,7 +1,5 @@
 <project name="ivy-mirror" default="dist" xmlns:ivy="antlib:org.apache.ivy.ant">
 
-    <property name="source.resolver" value="outside"/>
-    <property name="target.resolver" value="dist"/>
     <property name="build" location="${basedir}/build"/>
     <property name="lib" location="${basedir}/lib"/>
     <property name="ivy.lib" location="${basedir}/lib"/>
@@ -42,7 +40,7 @@
         <mkdir dir="${build}"/>
     </target>
 
-    <target name="install-jars" depends="init">
+    <target name="-install-jars" depends="init">
         <ivy:install organisation="org.apache.ivy" module="ivy" revision="2.2.0" from="${source.resolver}" to="${target.resolver}" transitive="false" overwrite="true"/>
         <ivy:install organisation="com.jcraft" module="jsch" revision="0.1.38" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
         <ivy:install organisation="com.jcraft" module="jsch" revision="0.1.42" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
@@ -114,10 +112,20 @@
         <ivy:install organisation="org.slf4j" module="slf4j-simple" revision="1.5.8" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
     </target>
 
-    <target name="install-extra" depends="clean, init-ivy">
-        <ivy:install organisation="ant" module="ant-junit" revision="1.6.5" from="outside" to="local" transitive="true" overwrite="true"/>
+    <target name="build">
+        <antcall target="-install-jars">
+            <param name="source.resolver" value="prefetch"/>
+            <param name="target.resolver" value="dist"/>
+	</antcall>
     </target>
 
-    <target name="dist" depends="clean, install-jars"/>
+    <target name="dist" depends="clean,build"/>
+
+    <target name="publish" depends="dist">
+        <antcall target="-install-jars">
+            <param name="source.resolver" value="dist"/>
+            <param name="target.resolver" value="dorothy-mirror"/>
+	</antcall>
+    </target>
 
 </project>

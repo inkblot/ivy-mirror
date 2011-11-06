@@ -1,6 +1,12 @@
 <ivysettings>
     <resolvers>
-        <chain name="outside" dual="true">
+        <chain name="prefetch" dual="true">
+            <url name="movealong-mirror" m2compatible="true">
+                <ivy pattern="http://ivy.movealong.org/mirror/[organization]/[module]/[revision]/ivy-[revision].[ext]"/>
+                <artifact
+                        pattern="http://ivy.movealong.org/mirror/[organization]/[module]/[revision]/[artifact]-[type]-[revision].[ext]"/>
+            </url>
+
             <ibiblio name="m2" m2compatible="true" root="http://repo1.maven.org/maven2/"/>
             <ibiblio name="ibiblio" m2compatible="true" root="http://mirrors.ibiblio.org/pub/mirrors/maven2/"/>
             <ibiblio name="javanet" m2compatible="true" root="http://download.java.net/maven/2/"/>
