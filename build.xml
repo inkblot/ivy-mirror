@@ -91,9 +91,7 @@
         <ivy:install organisation="org.hsqldb" module="hsqldb" revision="2.0.0" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
         <ivy:install organisation="org.hsqldb" module="hsqldb" revision="2.2.4" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
         <ivy:install organisation="org.htmlparser" module="htmlparser" revision="1.6" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
-        <!--<ivy:install organisation="org.jclouds" module="jclouds-allblobstore" revision="1.0-beta-7" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>-->
-        <!--<ivy:install organisation="org.jclouds" module="jclouds-allcompute" revision="1.0-beta-7" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>-->
-        <!--<ivy:install organisation="org.jclouds" module="jclouds-jsch" revision="1.0-beta-7" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>-->
+        <ivy:install organisation="org.jclouds" module="jclouds-all" revision="1.2.1" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
         <ivy:install organisation="org.jmock" module="jmock" revision="2.5.1" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
         <ivy:install organisation="org.jmock" module="jmock-junit4" revision="2.5.1" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
         <ivy:install organisation="org.json" module="json" revision="20090211" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
