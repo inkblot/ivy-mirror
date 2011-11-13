@@ -94,13 +94,18 @@
         <ivy:install organisation="org.htmlparser" module="htmlparser" revision="1.6" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
         <ivy:install organisation="org.jclouds" module="jclouds-blobstore" revision="1.2.1" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="org.jclouds" module="jclouds-compute" revision="1.2.1" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
+        <ivy:install organisation="org.jclouds" module="jclouds-core" revision="1.2.1" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
+        <ivy:install organisation="org.jclouds" module="jclouds-scriptbuilder" revision="1.2.1" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
+        <ivy:install organisation="org.jclouds.api" module="ec2" revision="1.2.1" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
+        <ivy:install organisation="org.jclouds.api" module="s3" revision="1.2.1" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
+        <ivy:install organisation="org.jclouds.common" module="aws-common" revision="1.2.1" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="org.jclouds.driver" module="jclouds-bouncycastle" revision="1.2.1" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="org.jclouds.driver" module="jclouds-jsch" revision="1.2.1" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="org.jclouds.driver" module="jclouds-log4j" revision="1.2.1" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="org.jclouds.driver" module="jclouds-slf4j" revision="1.2.1" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="org.jclouds.driver" module="jclouds-sshj" revision="1.2.1" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
-	<ivy:install organisation="org.jclouds.provider" module="aws-ec2" revision="1.2.1" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
-	<ivy:install organisation="org.jclouds.provider" module="aws-s3" revision="1.2.1" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
+        <ivy:install organisation="org.jclouds.provider" module="aws-ec2" revision="1.2.1" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
+        <ivy:install organisation="org.jclouds.provider" module="aws-s3" revision="1.2.1" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="org.jmock" module="jmock" revision="2.5.1" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
         <ivy:install organisation="org.jmock" module="jmock-junit4" revision="2.5.1" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
         <ivy:install organisation="org.json" module="json" revision="20090211" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
@@ -128,7 +133,7 @@
         <antcall target="-install-jars">
             <param name="source.resolver" value="prefetch"/>
             <param name="target.resolver" value="dist"/>
-	</antcall>
+        </antcall>
     </target>
 
     <target name="dist" depends="clean,build"/>
@@ -137,7 +142,7 @@
         <antcall target="-install-jars">
             <param name="source.resolver" value="dist"/>
             <param name="target.resolver" value="dorothy-mirror"/>
-	</antcall>
+        </antcall>
     </target>
 
 </project>
