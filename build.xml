@@ -136,6 +136,7 @@
         <ivy:install organisation="javax.transaction" module="jta" revision="1.0.1B" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="javax.transaction" module="jta" revision="1.1" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="javax.ws.rs" module="jsr311-api" revision="1.1.1" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
+	<ivy:install organisation="javax.xml.bind" module="jaxb-api" revision="2.2.2" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="jdom" module="jdom" revision="1.0" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="jmock" module="jmock" revision="1.1.0" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="junit" module="junit-dep" revision="4.4" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
