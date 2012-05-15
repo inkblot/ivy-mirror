@@ -63,7 +63,7 @@
         <ivy:install organisation="com.google.inject" module="guice" revision="3.0" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="com.google.inject.extensions" module="guice-assistedinject" revision="3.0" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="com.google.inject.extensions" module="guice-multibindings" revision="2.0" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
-        <ivy:install organisation="com.google.inject.integration" module="guice-servlet" revision="1.0" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
+        <ivy:install organisation="com.google.inject.extensions" module="guice-servlet" revision="3.0" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="com.intellij" module="annotations" revision="7.0.3" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="com.intellij" module="extensions" revision="7.0.3" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="com.intellij" module="javac2" revision="7.0.3" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
