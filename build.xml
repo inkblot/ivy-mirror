@@ -76,7 +76,7 @@
         <ivy:install organisation="com.lowagie" module="itext" revision="1.3" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="com.servlets" module="cos" revision="05Nov2002" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="com.servlets" module="cos" revision="09May2002" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
-	<ivy:install organisation="com.sun.xml.bind" module="jaxb-impl" revision="2.2.3-1" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
+        <ivy:install organisation="com.sun.xml.bind" module="jaxb-impl" revision="2.2.3-1" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="com.sun.jdmk" module="jmxtools" revision="1.2.1" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="com.sun.jersey" module="jersey-core" revision="1.6" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="com.sun.jersey" module="jersey-core" revision="1.12" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
@@ -136,7 +136,7 @@
         <ivy:install organisation="javax.transaction" module="jta" revision="1.0.1B" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="javax.transaction" module="jta" revision="1.1" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="javax.ws.rs" module="jsr311-api" revision="1.1.1" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
-	<ivy:install organisation="javax.xml.bind" module="jaxb-api" revision="2.2.2" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
+        <ivy:install organisation="javax.xml.bind" module="jaxb-api" revision="2.2.2" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="jdom" module="jdom" revision="1.0" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="jmock" module="jmock" revision="1.1.0" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="junit" module="junit-dep" revision="4.4" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
@@ -174,11 +174,11 @@
         <ivy:install organisation="org.aspectj" module="aspectjtools" revision="1.6.11" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="org.asteriskjava" module="asterisk-java" revision="1.0.0.M3" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="org.beanshell" module="bsh" revision="2.0b4" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
-	<ivy:install organisation="org.codehaus.jackson" module="jackson-core-asl" revision="1.9.2" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
-	<ivy:install organisation="org.codehaus.jackson" module="jackson-jaxrs" revision="1.9.2" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
-	<ivy:install organisation="org.codehaus.jackson" module="jackson-mapper-asl" revision="1.9.2" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
-	<ivy:install organisation="org.codehaus.jackson" module="jackson-xc" revision="1.9.2" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
-	<ivy:install organisation="org.codehaus.jettison" module="jettison" revision="1.1" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
+        <ivy:install organisation="org.codehaus.jackson" module="jackson-core-asl" revision="1.9.2" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
+        <ivy:install organisation="org.codehaus.jackson" module="jackson-jaxrs" revision="1.9.2" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
+        <ivy:install organisation="org.codehaus.jackson" module="jackson-mapper-asl" revision="1.9.2" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
+        <ivy:install organisation="org.codehaus.jackson" module="jackson-xc" revision="1.9.2" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
+        <ivy:install organisation="org.codehaus.jettison" module="jettison" revision="1.1" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="org.easymock" module="easymock" revision="2.2" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="org.easymock" module="easymock" revision="2.3" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="org.hamcrest" module="hamcrest-core" revision="1.1" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
@@ -243,6 +243,7 @@
         <ivy:install organisation="portlet-api" module="portlet-api" revision="1.0" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="quartz" module="quartz" revision="1.5.1" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="servlets.com" module="cos" revision="05Nov2002" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
+        <ivy:install organisation="stax" module="stax-api" revision="1.0.1" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="struts" module="struts" revision="1.2.7" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="taglibs" module="standard" revision="1.0.6" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="velocity" module="velocity-dep" revision="1.3.1" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
