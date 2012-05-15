@@ -172,6 +172,10 @@
         <ivy:install organisation="org.aspectj" module="aspectjtools" revision="1.6.11" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="org.asteriskjava" module="asterisk-java" revision="1.0.0.M3" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="org.beanshell" module="bsh" revision="2.0b4" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
+	<ivy:install organisation="org.codehaus.jackson" module="jackson-core-asl" revision="1.9.2" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
+	<ivy:install organisation="org.codehaus.jackson" module="jackson-jaxrs" revision="1.9.2" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
+	<ivy:install organisation="org.codehaus.jackson" module="jackson-mapper-asl" revision="1.9.2" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
+	<ivy:install organisation="org.codehaus.jackson" module="jackson-xc" revision="1.9.2" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="org.easymock" module="easymock" revision="2.2" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="org.easymock" module="easymock" revision="2.3" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="org.hamcrest" module="hamcrest-core" revision="1.1" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
