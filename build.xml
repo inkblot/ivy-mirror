@@ -76,6 +76,7 @@
         <ivy:install organisation="com.lowagie" module="itext" revision="1.3" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="com.servlets" module="cos" revision="05Nov2002" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="com.servlets" module="cos" revision="09May2002" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
+	<ivy:install organisation="com.sun.xml.bind" module="jaxb-impl" revision="2.2.3-1" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="com.sun.jdmk" module="jmxtools" revision="1.2.1" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="com.sun.jersey" module="jersey-core" revision="1.6" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="com.sun.jersey" module="jersey-core" revision="1.12" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
@@ -176,6 +177,7 @@
 	<ivy:install organisation="org.codehaus.jackson" module="jackson-jaxrs" revision="1.9.2" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
 	<ivy:install organisation="org.codehaus.jackson" module="jackson-mapper-asl" revision="1.9.2" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
 	<ivy:install organisation="org.codehaus.jackson" module="jackson-xc" revision="1.9.2" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
+	<ivy:install organisation="org.codehaus.jettison" module="jettison" revision="1.1" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="org.easymock" module="easymock" revision="2.2" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="org.easymock" module="easymock" revision="2.3" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="org.hamcrest" module="hamcrest-core" revision="1.1" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
