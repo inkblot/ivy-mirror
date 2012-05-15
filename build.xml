@@ -78,6 +78,10 @@
         <ivy:install organisation="com.servlets" module="cos" revision="09May2002" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="com.sun.jdmk" module="jmxtools" revision="1.2.1" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="com.sun.jersey" module="jersey-core" revision="1.6" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
+        <ivy:install organisation="com.sun.jersey" module="jersey-core" revision="1.12" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
+        <ivy:install organisation="com.sun.jersey" module="jersey-json" revision="1.12" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
+        <ivy:install organisation="com.sun.jersey" module="jersey-server" revision="1.12" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
+        <ivy:install organisation="com.sun.jersey" module="jersey-servlet" revision="1.12" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="com.sun.jmx" module="jmxri" revision="1.2.1" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="commons-beanutils" module="commons-beanutils" revision="1.7.0" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="commons-beanutils" module="commons-beanutils" revision="1.8.3" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
