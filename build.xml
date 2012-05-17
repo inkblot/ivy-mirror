@@ -196,6 +196,7 @@
         <ivy:install organisation="org.hsqldb" module="hsqldb" revision="2.0.0" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="org.hsqldb" module="hsqldb" revision="2.2.4" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="org.htmlparser" module="htmlparser" revision="1.6" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
+	<ivy:install organisation="org.jasypt" module="jasypt" revision="1.9.0" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="org.jclouds" module="jclouds-blobstore" revision="1.2.1" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="org.jclouds" module="jclouds-compute" revision="1.2.1" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="org.jclouds" module="jclouds-core" revision="1.2.1" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
