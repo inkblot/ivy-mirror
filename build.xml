@@ -113,7 +113,7 @@
         <ivy:install organisation="commons-logging" module="commons-logging" revision="1.1.1" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="commons-pool" module="commons-pool" revision="1.5.4" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="commons-validator" module="commons-validator" revision="1.1.4" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
-        <ivy:install organisation="commons-validator" module="commons-validator" revision="1.4.1" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
+        <ivy:install organisation="commons-validator" module="commons-validator" revision="1.4.0" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="displaytag" module="displaytag" revision="1.2" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="dom4j" module="dom4j" revision="1.6.1" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="ehcache" module="ehcache" revision="1.1" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
