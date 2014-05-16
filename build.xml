@@ -4,7 +4,7 @@
     <property name="lib" location="${basedir}/lib"/>
     <property name="ivy.lib" location="${basedir}/lib"/>
     <property name="ivy.version" value="2.2.0"/>
-    <property name="ivy.jar.file" value="ivy-${ivy.version}.jar"/>
+    <property name="ivy.jar.file" value="ivy-jar-${ivy.version}.jar"/>
     <property name="jsch.version" value="0.1.44-1"/>
     <property name="jsch.jar.file" value="jsch-${jsch.version}.jar"/>
 
