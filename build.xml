@@ -3,8 +3,10 @@
     <property name="build" location="${basedir}/build"/>
     <property name="lib" location="${basedir}/lib"/>
     <property name="ivy.lib" location="${basedir}/lib"/>
-    <property name="ivy.jar.file" value="ivy-2.2.0.jar"/>
-    <property name="jsch.jar.file" value="jsch-0.1.42.jar"/>
+    <property name="ivy.version" value="2.2.0"/>
+    <property name="ivy.jar.file" value="ivy-${ivy.version}-jar.jar"/>
+    <property name="jsch.version" value="0.1.44-1"/>
+    <property name="jsch.jar.file" value="jsch-${jsch.version}.jar"/>
 
     <condition property="download-ivy.once">
         <available file="${ivy.jar.file}"/>
@@ -20,9 +22,9 @@
 
     <target name="download-ivy" unless="download-ivy.once">
         <mkdir dir="${ivy.lib}"/>
-        <get src="http://dorothy.movealong.org/~inkblot/ivy/${ivy.jar.file}"
+        <get src="https://ivy.movealong.org/mirror/org/apache/ivy/ivy/${ivy.version}/${ivy.jar.file}"
              dest="${ivy.lib}/${ivy.jar.file}" usetimestamp="true" verbose="true"/>
-        <get src="http://dorothy.movealong.org/~inkblot/ivy/${jsch.jar.file}"
+        <get src="https://ivy.movealong.org/mirror/com/jcraft/jsch/${jsch.version}/${jsch.jar.file}"
              dest="${ivy.lib}/${jsch.jar.file}" usetimestamp="true" verbose="true"/>
     </target>
 
