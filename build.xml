@@ -6,7 +6,7 @@
     <property name="ivy.version" value="2.2.0"/>
     <property name="ivy.jar.file" value="ivy-jar-${ivy.version}.jar"/>
     <property name="jsch.version" value="0.1.44-1"/>
-    <property name="jsch.jar.file" value="jsch-${jsch.version}.jar"/>
+    <property name="jsch.jar.file" value="jsch-jar-${jsch.version}.jar"/>
 
     <condition property="download-ivy.once">
         <available file="${ivy.jar.file}"/>
