@@ -239,7 +239,6 @@
         <ivy:install organisation="org.slf4j" module="slf4j-log4j12" revision="1.6.1" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="org.slf4j" module="slf4j-log4j12" revision="1.6.2" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
         <ivy:install organisation="org.slf4j" module="slf4j-log4j12" revision="1.7.7" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
-        <ivy:install organisation="org.slf4j" module="slf4j-log4j14" revision="1.7.7" from="${source.resolver}" to="${target.resolver}" transitive="true" overwrite="true"/>
         <ivy:install organisation="org.slf4j" module="slf4j-simple" revision="1.4.2" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="org.slf4j" module="slf4j-simple" revision="1.5.8" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="org.slf4j" module="slf4j-simple" revision="1.6.0" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
