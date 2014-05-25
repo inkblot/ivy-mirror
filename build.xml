@@ -168,6 +168,7 @@
         <ivy:install organisation="net.sourceforge.collections" module="collections-generic" revision="4.01" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="net.sourceforge.stripes" module="stripes" revision="1.5.2" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="net.sourceforge.stripes" module="stripes" revision="1.5.6" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
+        <ivy:install organisation="net.sourceforge.stripes" module="stripes" revision="1.5.7" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="ognl" module="ognl" revision="2.6.5" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="opensymphony" module="oscore" revision="2.2.4" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
         <ivy:install organisation="opensymphony" module="pell-multipart" revision="2.1.5" from="${source.resolver}" to="${target.resolver}" overwrite="true"/>
